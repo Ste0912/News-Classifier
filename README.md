@@ -1,12 +1,12 @@
-# News-Classifier
-News-Classifier is a Natural Language Processing (NLP) and machine learning project. Designed to detect and classify news articles as either True or Fake, this system processes raw text data, extracts meaningful features, and evaluates multiple classification algorithms. The repository reflects a rigorous computer engineering approach to evaluating data integrity and mitigating the spread of fabricated information in digital ecosystems.
+# News-Classifier: AI Robustness & Misinformation Detection
+News-Classifier is a Natural Language Processing (NLP) and machine learning project focused on Threat Intelligence and model security. Designed to detect and classify news articles as either True or Fake, this system evaluates the robustness and reliability of multiple classification algorithms against fabricated information. The repository reflects a cybersecurity and computer engineering approach to identifying vulnerabilities in AI models and mitigating the spread of adversarial clickbait and AI-generated fake news in digital ecosystems.
 
 ## Repository Structure
 * `main.ipynb`: The core Jupyter Notebook containi all functionalities for data preprocessing, data validation, model training, evaluation, and visualization.
 * `True.csv`: Dataset containing authentic news articles.
 * `Fake.csv`: Dataset containing fabricated news articles.
 * `News.csv`: The combined, cleaned, and preprocessed dataset outputted by the notebook.
-* `externalArticles.cvs`: A collection of external articles used for out-of-sample testing of the trained classifiers.
+* `externalArticles.cvs`: A collection of external articles used for out-of-sample testing of the trained classifiers and AI-generated texts used for real-world robustness and adversarial testing.
 
 ## Methodology & Functionalities
 
@@ -40,12 +40,16 @@ The following classifiers are trained and appended to a tracking list for compar
 * **Multinomial Naive Bayes**
 
 ### 5. Evaluation & Visualization
-Each trained model is evaluated iteratively on the test set, generating:
+Each trained model is evaluated iteratively on the test set to identify limitations, generating:
 * **Classification Reports**: Detailing precision, recall, f1-score, support, and overall accuracy.
 * **Graphical Visualizations**: Plotting accuracy scores, confusion matrices (showing true/false positives and negatives), and ROC AUC curves to visualize the tradeoff between true positive and false positive rates.
 
 ### 6. External Testing
-To verify real-world robustness, the trained models are finally tested against completely unseen, real-world text inputs derived from `externalArticles.cvs`, calculating predictions and plotting their respective performance metrics.
+To verify real-world robustness against potential attackers using AI for clickbait or disinformation campaigns, the models undergo reliability tests using completely unseen inputs derived from `externalArticles.cvs`. This phase includes:
+**Real-World Benchmarking**: Testing against verified real-world sources (e.g., The Times, The Sun).
+* **Adversarial Simulation**: Simulating realistic attack scenarios by exposing the models to anomalous inputs and AI-generated texts.
+* **Performance Metrics**: Calculating predictions and plotting respective metrics to conduct a comparative analysis of the best classification capabilities under stress.
+
 
 ## 🛠 Technologies & Libraries
 
