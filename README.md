@@ -56,7 +56,7 @@ To verify real-world robustness against potential attackers using AI for clickba
 **Core Language**
 * `Python 3.x`
 
-**Data Engineering & Manipulation**
+**Data Manipulation**
 * `pandas`: For data ingestion, merging, and structural manipulation.
 * `numpy`: For numerical operations and array handling.
 
