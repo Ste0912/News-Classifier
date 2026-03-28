@@ -2,7 +2,7 @@
 News-Classifier is a Natural Language Processing (NLP) and machine learning project focused on Threat Intelligence and model security. Designed to detect and classify news articles as either True or Fake, this system evaluates the robustness and reliability of multiple classification algorithms against fabricated information. The repository reflects a cybersecurity and computer engineering approach to identifying vulnerabilities in AI models and mitigating the spread of adversarial clickbait and AI-generated fake news in digital ecosystems.
 
 ## Repository Structure
-* `main.ipynb`: The core Jupyter Notebook containi all functionalities for data preprocessing, data validation, model training, evaluation, and visualization.
+* `main.ipynb`: The core Jupyter Notebook contains all functionalities for data preprocessing, data validation, model training, evaluation, and visualization.
 * `True.csv`: Dataset containing authentic news articles.
 * `Fake.csv`: Dataset containing fabricated news articles.
 * `News.csv`: The combined, cleaned, and preprocessed dataset outputted by the notebook.
